@@ -1,4 +1,5 @@
 # CMPT-365-Final
+(PDF doesn't support GIF, for GIF demo, please see our [web version report](https://github.com/Lyken17/CMPT-365-Final))
 
 # how to use
 Load `scr` folder in matlab, then run.
