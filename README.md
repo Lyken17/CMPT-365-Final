@@ -65,7 +65,7 @@ Mysterious block, we don't figure out its exact usage, we simply follow what oth
 This is the core part of image representation. All the image data block starts with a LZWMin which indicates the color bits then it follows several data blocks. After mapping color to corresponding index in color table, we then flat all pixels row by row to 1D array. For each image, we apply LZW encoding on the array to get `image data`.
 
 ![](images/lzw_encoding_codes.gif)
-The size of block should be identical to the size of LZW table at each time. As the table size becomes 2^13, insert a clear code inside and rest the LZW table. The `image data` is then split them by 256, and encoded in binary stream, until last chunk is met.
+The size of block should be identical to the size of LZW table at each time. As the table size becomes 2^13, insert a clear code inside and reset the LZW table. The `image data` is then split them by 256, and encoded in binary stream, until last chunk is met.
 # Demo
 examples | examples
 --- | ---
