@@ -1,16 +1,17 @@
-# CMPT-365-Final
-(PDF doesn't support GIF, for GIF demo, please see our [web version report](https://github.com/Lyken17/CMPT-365-Final))
+# CMPT-365-Final-Project
+In this project, we implement a GIF encoder that dumps a series of image into web-playable GIF. 
 
-# how to use
-Load `scr` folder in matlab, then run.
+# Usage
+Load `source` folder in matlab, run `main.m`
 
-# external libraries
+Dependencies: 
 * built-in function `VideoReader` to extract frame from video.
 
-# algorithms details
-We implemented the algorithm by following the GIF standard `GIF89a`. The spefication document we refers is [w3 GIF89a specifics](https://www.w3.org/Graphics/GIF/spec-gif89a.txt). Also, we get a lot of help from the intuitive explanation by [3MF project](http://www.matthewflickinger.com/lab/whatsinagif/bits_and_bytes.asp).
+# Algorithms Details
+Thhe algorithm follows the GIF standard [w3 GIF89a specifics](https://www.w3.org/Graphics/GIF/spec-gif89a.txt). Beside the offical document, we also get a lot of help from the intuitive explanation [3MF project](http://www.matthewflickinger.com/lab/whatsinagif/bits_and_bytes.asp).
 
-Overall structure is shown below, as documentation defines, not all parts are necessary. So in our implementation,  `Comment Extension`, `Plain Text Extension`, `Local Color Lookup Table` are ignored.
+Overall structure is shown below. As indicated in official document, not all parts are necessary.  
+Thus we do not implement encoder for `Comment Extension`, `Plain Text Extension`, `Local Color Lookup Table`. 
 ![](images/gif_file_stream.gif)
 
 ## Header Block  
